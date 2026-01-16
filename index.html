@@ -1,240 +1,223 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashlee Statham | Data Science Portfolio</title>
+
+    <!-- Google Fonts for nicer typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        /* --- General Styles --- */
+        body {
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* --- Sections --- */
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* --- Projects Placeholder --- */
+        .projects-placeholder {
+            background-color: #fafafa;
+            border: 2px dashed #ccc;
+            padding: 30px;
+            text-align: center;
+            color: #777;
+            border-radius: 8px;
+            font-style: italic;
+        }
+
+        /* --- Blog Articles --- */
+        article {
+            margin-bottom: 30px;
+        }
+
+        article h3 {
+            margin-top: 0;
+        }
+
+        article em {
+            color: #555;
+        }
+
+        article p {
+            margin-bottom: 15px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9em;
+            background-color: #222;
+            color: white;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 600px) {
+            section {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Ashlee Statham | Data Science Portfolio&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Google Fonts for nicer typography --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>rel="stylesheet"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- General Styles --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Roboto', Arial, Helvetica, sans-serif;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #f5f5f5;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #333;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.6;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h2,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h3 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #2c3e50;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>a {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #2980b9;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-decoration: none;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>a:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-decoration: underline;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- Header --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>header {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #222;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 50px 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>header h1 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 3em;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>header p {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- Sections --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>section {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 900px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 40px auto;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 30px 40px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>section h2 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #ddd;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- Projects Placeholder --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.projects-placeholder {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #fafafa;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 2px dashed #ccc;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 30px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #777;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 8px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-style: italic;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- Blog Articles --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>article {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>article h3 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 0;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>article em {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #555;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>article p {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- Footer --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>footer {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 25px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 0.9em;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #222;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* --- Responsive --- */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@media (max-width: 600px) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>section {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>padding: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>header h1 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>font-size: 2em;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>header p {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>font-size: 1em;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- HEADER --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Ashlee Statham&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Data Science Student | Portfolio &amp; Blog&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- ABOUT ME --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="about"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;About Me&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Hello and Welcome! I’m Ashlee, a data science student interested in using</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>data to better understand people, systems, and social patterns. I’m</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>especially interested in how data science can be applied in</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>interdisciplinary contexts, including social science, policy,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>technology, and ethical decision-making. My personal interests include</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>spending time with my family, traveling, cars, watching football (Keep</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Pounding Panthers!), and watching basketball (Go Celtics!).</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>This website will grow throughout the semester as I develop new technical</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>skills, complete projects, and reflect on what I’m learning.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- PORTFOLIO / PROJECTS --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="projects"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Portfolio / Projects&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="projects-placeholder"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;strong&gt;Projects coming soon.&lt;/strong&gt;&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>This section will be updated throughout the semester with data science</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>projects as I complete them.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- BLOG --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="blog"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Blog&lt;/h2&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;article&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Why Learning Data Science in Social and Interdisciplinary Contexts Matters</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;&lt;em&gt;Published: January 2026&lt;/em&gt;&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Learning data science in social and interdisciplinary contexts matters</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>because data is not just numbers — it represents people, behaviors, and</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>real-world outcomes. Modeling social topics and people allows us to</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>better understand patterns that are often invisible at the individual</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>level, such as inequality and access to resources. When used correctly,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>data science can have a positive and powerful impact on public policy,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>healthcare, education, and technology.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>At the same time, working with data about people comes with significant</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>responsibilities. Data is rarely neutral, and the way it is collected,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>modeled, and interpreted can sometimes create biases and/or overlook</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>important context. As someone learning data science, I often think</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>about ethical responsibilities such as protecting privacy, avoiding</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>harmful assumptions, and being transparent about limitations in data</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>and models. Understanding who is represented — and who is not — is just</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>as important as building accurate models.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Another reason interdisciplinary learning matters is because social</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>problems cannot be solved through technical skills alone. Data science</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>benefits from perspectives in sociology, psychology, ethics, and public</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>policy. Without these perspectives, it’s easy to misinterpret results</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>or apply models in ways that cause harm. For that reason, learning to</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>ask thoughtful questions is just as important as learning how to code.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Through my DTSC Studio II course, I’m hoping to better understand how</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>data science tools can be used to explore social questions responsibly</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>and thoughtfully. I want to develop both technical skills and critical</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>thinking skills so that I can analyze data in a way that respects the</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>people involved. Ultimately, my goal is to use data science not just to</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>find patterns, but to contribute to more informed and ethical</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>decision-making.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- FOOTER --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;© 2026 Ashlee Statham | Built with GitHub Pages&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+    <!-- HEADER -->
+    <header>
+        <h1>Ashlee Statham</h1>
+        <p>Data Science Student | Portfolio & Blog</p>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello and Welcome! I’m Ashlee, a data science student interested in using
+            data to better understand people, systems, and social patterns. I’m
+            especially interested in how data science can be applied in
+            interdisciplinary contexts, including social science, policy,
+            technology, and ethical decision-making. My personal interests include
+            spending time with my family, traveling, cars, watching football (Keep
+            Pounding Panthers!), and watching basketball (Go Celtics!).
+        </p>
+        <p>
+            This website will grow throughout the semester as I develop new technical
+            skills, complete projects, and reflect on what I’m learning.
+        </p>
+    </section>
+
+    <!-- PORTFOLIO / PROJECTS -->
+    <section id="projects">
+        <h2>Portfolio / Projects</h2>
+
+        <div class="projects-placeholder">
+            <p><strong>Projects coming soon.</strong></p>
+            <p>
+                This section will be updated throughout the semester with data science
+                projects as I complete them.
+            </p>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+        <h2>Blog</h2>
+
+        <article>
+            <h3>
+                Why Learning Data Science in Social and Interdisciplinary Contexts Matters
+            </h3>
+            <p><em>Published: January 2026</em></p>
+
+            <p>
+                Learning data science in social and interdisciplinary contexts matters
+                because data is not just numbers — it represents people, behaviors, and
+                real-world outcomes. Modeling social topics and people allows us to
+                better understand patterns that are often invisible at the individual
+                level, such as inequality and access to resources. When used correctly,
+                data science can have a positive and powerful impact on public policy,
+                healthcare, education, and technology.
+            </p>
+
+            <p>
+                At the same time, working with data about people comes with significant
+                responsibilities. Data is rarely neutral, and the way it is collected,
+                modeled, and interpreted can sometimes create biases and/or overlook
+                important context. As someone learning data science, I often think
+                about ethical responsibilities such as protecting privacy, avoiding
+                harmful assumptions, and being transparent about limitations in data
+                and models. Understanding who is represented — and who is not — is just
+                as important as building accurate models.
+            </p>
+
+            <p>
+                Another reason interdisciplinary learning matters is because social
+                problems cannot be solved through technical skills alone. Data science
+                benefits from perspectives in sociology, psychology, ethics, and public
+                policy. Without these perspectives, it’s easy to misinterpret results
+                or apply models in ways that cause harm. For that reason, learning to
+                ask thoughtful questions is just as important as learning how to code.
+            </p>
+
+            <p>
+                Through my DTSC Studio II course, I’m hoping to better understand how
+                data science tools can be used to explore social questions responsibly
+                and thoughtfully. I want to develop both technical skills and critical
+                thinking skills so that I can analyze data in a way that respects the
+                people involved. Ultimately, my goal is to use data science not just to
+                find patterns, but to contribute to more informed and ethical
+                decision-making.
+            </p>
+        </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Ashlee Statham | Built with GitHub Pages</p>
+    </footer>
 </body>
 </html>
