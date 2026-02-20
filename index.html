@@ -1,162 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashlee Statham | Data Science Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashlee Statham | Data Science Portfolio</title>
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet"
-    >
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Roboto', Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f8;
-            color: #333;
-            line-height: 1.7;
-        }
+<style>
 
-        h1, h2, h3 {
-            color: #1f2d3d;
-        }
+/* ---------------- GLOBAL ---------------- */
 
-        a {
-            color: #2c3e50;
-            text-decoration: none;
-        }
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.7;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+h1, h2, h3 {
+    margin-top: 0;
+}
 
-        header {
-            background-color: #1f2d3d;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+section {
+    max-width: 950px;
+    margin: 60px auto;
+    background: white;
+    padding: 50px 60px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            font-weight: 500;
-        }
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            font-weight: 300;
-        }
+/* Consistent paragraph spacing */
+article p {
+    margin-bottom: 18px;
+}
 
-        section {
-            max-width: 900px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px 50px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
+/* ---------------- NAVIGATION ---------------- */
 
-        section h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-weight: 500;
-        }
+nav {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
 
-        .projects-placeholder {
-            background-color: #fafafa;
-            border: 2px dashed #ddd;
-            padding: 40px;
-            text-align: center;
-            color: #777;
-            border-radius: 8px;
-            font-style: italic;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 400;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
 
-        /* Blog Styling */
+nav a:hover {
+    opacity: 0.7;
+}
 
-        article {
-            margin-bottom: 60px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #e5e5e5;
-        }
+/* ---------------- HEADER ---------------- */
 
-        article:last-of-type {
-            border-bottom: none;
-        }
+header {
+    background: linear-gradient(135deg, #1f2d3d, #2c3e50);
+    color: white;
+    padding: 110px 20px 90px 20px;
+    text-align: center;
+    position: relative;
+}
 
-        article h3 {
-            margin-bottom: 5px;
-            font-size: 1.6em;
-        }
+header h1 {
+    font-size: 3.2em;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
 
-        .meta {
-            font-size: 0.9em;
-            color: #888;
-            margin-bottom: 15px;
-        }
+.accent-line {
+    width: 70px;
+    height: 3px;
+    background: #4aa3ff;
+    margin: 15px auto 20px auto;
+    border-radius: 2px;
+}
 
-        .read-more-btn {
-            display: inline-block;
-            margin-top: 15px;
-            font-weight: 500;
-            font-size: 0.95em;
-            cursor: pointer;
-            color: #2c3e50;
-            transition: 0.3s;
-        }
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    opacity: 0.9;
+}
 
-        .read-more-btn:hover {
-            opacity: 0.7;
-        }
+/* ---------------- PROJECTS ---------------- */
 
-        .extra-content {
-            display: none;
-            margin-top: 15px;
-        }
+.projects-placeholder {
+    background-color: #fafafa;
+    border: 2px dashed #ddd;
+    padding: 40px;
+    text-align: center;
+    color: #777;
+    border-radius: 8px;
+    font-style: italic;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 0.9em;
-            background-color: #1f2d3d;
-            color: white;
-        }
+/* ---------------- BLOG ---------------- */
 
-        @media (max-width: 600px) {
-            section {
-                padding: 25px;
-            }
+article {
+    margin-bottom: 70px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #e6e9ee;
+}
 
-            header h1 {
-                font-size: 2em;
-            }
-        }
-    </style>
+article:last-of-type {
+    border-bottom: none;
+}
 
-    <script>
-        function toggleContent(id, btn) {
-            var content = document.getElementById(id);
-            if (content.style.display === "none") {
-                content.style.display = "block";
-                btn.innerText = "Read Less ↑";
-            } else {
-                content.style.display = "none";
-                btn.innerText = "Read More →";
-            }
-        }
-    </script>
+article h3 {
+    margin-bottom: 5px;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.meta {
+    font-size: 0.9em;
+    color: #8892a0;
+    margin-bottom: 15px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 0.95em;
+    cursor: pointer;
+    color: #1f2d3d;
+    transition: color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    color: #4aa3ff;
+}
+
+.extra-content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    text-align: center;
+    padding: 35px;
+    font-size: 0.9em;
+    background-color: #1f2d3d;
+    color: white;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+    section {
+        padding: 30px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav {
+        right: 20px;
+    }
+}
+
+</style>
+
+<script>
+function toggleContent(id, btn) {
+    var content = document.getElementById(id);
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        btn.innerText = "Read Less ↑";
+    } else {
+        content.style.display = "none";
+        btn.innerText = "Read More →";
+    }
+}
+</script>
+
 </head>
 
 <body>
 
 <header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
     <h1>Ashlee Statham</h1>
+    <div class="accent-line"></div>
     <p>Data Science Student | Portfolio & Blog</p>
 </header>
 
@@ -179,7 +230,6 @@
 
 <section id="projects">
     <h2>Portfolio / Projects</h2>
-
     <div class="projects-placeholder">
         <p><strong>Projects coming soon.</strong></p>
         <p>
@@ -192,7 +242,7 @@
 <section id="blog">
     <h2>Blog</h2>
 
-    <!-- Blog Post 1 -->
+    <!-- BLOG POST 1 -->
     <article>
         <h3>Why Learning Data Science in Social and Interdisciplinary Contexts Matters</h3>
         <div class="meta">Published: January 2026 | 4 min read</div>
@@ -204,27 +254,18 @@
         </p>
 
         <div id="post1" class="extra-content">
+            <!-- Full original text preserved -->
             <p>
-                Modeling social topics allows us to understand patterns that are often invisible
-                at the individual level, such as inequality and access to resources.
-                When used correctly, data science can positively impact public policy,
-                healthcare, education, and technology.
+                Modeling social topics and people allows us to better understand patterns that are often invisible at the individual level, such as inequality and access to resources. When used correctly, data science can have a positive and powerful impact on public policy, healthcare, education, and technology.
             </p>
             <p>
-                At the same time, working with data about people comes with responsibilities.
-                Data is rarely neutral, and how it is collected and interpreted can create bias.
-                Protecting privacy, avoiding harmful assumptions, and acknowledging limitations
-                are essential responsibilities.
+                At the same time, working with data about people comes with significant responsibilities. Data is rarely neutral, and the way it is collected, modeled, and interpreted can sometimes create biases and/or overlook important context. As someone learning data science, I often think about ethical responsibilities such as protecting privacy, avoiding harmful assumptions, and being transparent about limitations in data and models. Understanding who is represented — and who is not — is just as important as building accurate models.
             </p>
             <p>
-                Interdisciplinary learning matters because social problems require more than
-                technical skills. Perspectives from sociology, psychology, ethics, and public
-                policy are critical to responsible analysis.
+                Another reason interdisciplinary learning matters is because social problems cannot be solved through technical skills alone. Data science benefits from perspectives in sociology, psychology, ethics, and public policy. Without these perspectives, it’s easy to misinterpret results or apply models in ways that cause harm. For that reason, learning to ask thoughtful questions is just as important as learning how to code.
             </p>
             <p>
-                Through DTSC Studio II, I aim to strengthen both technical and critical thinking
-                skills so I can use data science to contribute to ethical and informed
-                decision-making.
+                Through my DTSC Studio II course, I’m hoping to better understand how data science tools can be used to explore social questions responsibly and thoughtfully. I want to develop both technical skills and critical thinking skills so that I can analyze data in a way that respects the people involved. Ultimately, my goal is to use data science not just to find patterns, but to contribute to more informed and ethical decision-making.
             </p>
         </div>
 
@@ -233,7 +274,7 @@
         </span>
     </article>
 
-    <!-- Blog Post 2 -->
+    <!-- BLOG POST 2 (Balanced preview length) -->
     <article>
         <h3>Social Determinants of Health and the Capabilities Approach</h3>
         <div class="meta">Published: February 2026 | 5 min read</div>
@@ -245,30 +286,18 @@
         </p>
 
         <div id="post2" class="extra-content">
+            <!-- Full original text preserved -->
             <p>
-                During Data Science Studio II, I learned about the Social Determinants
-                of Health (SDOH), defined as the conditions in which people are born,
-                grow, live, work, and age. I now see SDOH as everyday circumstances
-                that quietly structure our chances of living a healthy life.
+                During this Data Science Studio II course, I have learned quite a bit about the Social Determinants of Health (SDOH). I found out that SDOH are the conditions in which people are born, grow, live, work, and age. With this new information, I personally define SDOH as general everyday circumstances that quietly structure our chances of living a healthy life.
             </p>
             <p>
-                Housing, employment, neighborhood safety, education, and social inclusion
-                all shape health outcomes. A child in damp housing may develop asthma.
-                Someone with stable employment is more likely to afford nutritious food
-                and experience lower stress levels.
+                Take housing for instance. A child growing up in a damp, overcrowded home is much more likely to develop asthma. Or, consider employment as another example. Someone with a secure job making fair pay is likely to have a lower stress level than someone who is experiencing the opposite. Something else to consider in this example is that the person with the secure job and fair pay is much more likely to be capable of buying nutritious foods than their counterpart as well. There are so many daily factors that quietly affect our quality of life, such as: neighborhood safety, education, social inclusion, community resources, etc. While none of these factors are considered “medical”, they still play a powerful role in who has the luxury of leading a healthy life.
             </p>
             <p>
-                The Capabilities Approach shifts focus from what people have to what
-                they are able to be and do. It asks whether people truly have the
-                freedom to live the life they value.
+                The Capabilities Approach, on the other hand, shifts the focus from what people have to what they are actually able to be and do. In my opinion, it asks if people have the freedom to live the kind of life they value and aspire. It’s honestly not just about income but genuinely about the actual opportunities at hand. An example of this would be, two people that both have access to a public park. If one person works three jobs, they never have free time to visit the park while the person with one job typically has a much better chance of finding free time. The person with three jobs has limited capability to enjoy recreational activities.
             </p>
             <p>
-                Comparing SDOH and the Capabilities Approach shows that social
-                conditions shape people’s capabilities. Unsafe neighborhoods,
-                poor housing, and discrimination limit not only health outcomes,
-                but also freedom, opportunity, and participation in society.
-                SDOH form the foundation on which capabilities either grow or
-                are constrained.
+                When comparing the SDOH and the Capabilities Approach, the connection seems to occur when looking at the social conditions that shape people’s freedom. Factors such as unsafe neighborhoods, poor housing, and discrimination don’t just increase risk of disease, but they also lower a person’s capabilities. They put a serious limit on one’s ability to be healthy, participate in everyday society, pursue higher education, or just feel secure. In other words, the SDOH are the base in which capabilities either grow or they don’t.
             </p>
         </div>
 
