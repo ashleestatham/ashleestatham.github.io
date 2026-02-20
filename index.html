@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashlee Statham | Data Science Portfolio</title>
 
-    <!-- Google Fonts for nicer typography -->
+    <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet"
     >
 
     <style>
-        /* --- General Styles --- */
         body {
             font-family: 'Roboto', Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f4f6f8;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
-        h1,
-        h2,
-        h3 {
-            color: #2c3e50;
+        h1, h2, h3 {
+            color: #1f2d3d;
         }
 
         a {
-            color: #2980b9;
+            color: #2c3e50;
             text-decoration: none;
         }
 
@@ -37,187 +34,254 @@
             text-decoration: underline;
         }
 
-        /* --- Header --- */
         header {
-            background-color: #222;
+            background-color: #1f2d3d;
             color: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
             font-size: 3em;
+            font-weight: 500;
         }
 
         header p {
             font-size: 1.2em;
             margin-top: 10px;
+            font-weight: 300;
         }
 
-        /* --- Sections --- */
         section {
             max-width: 900px;
-            margin: 40px auto;
+            margin: 50px auto;
             background: white;
-            padding: 30px 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
         section h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 500;
         }
 
-        /* --- Projects Placeholder --- */
         .projects-placeholder {
             background-color: #fafafa;
-            border: 2px dashed #ccc;
-            padding: 30px;
+            border: 2px dashed #ddd;
+            padding: 40px;
             text-align: center;
             color: #777;
             border-radius: 8px;
             font-style: italic;
         }
 
-        /* --- Blog Articles --- */
+        /* Blog Styling */
+
         article {
-            margin-bottom: 30px;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        article:last-of-type {
+            border-bottom: none;
         }
 
         article h3 {
-            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.6em;
         }
 
-        article em {
-            color: #555;
-        }
-
-        article p {
+        .meta {
+            font-size: 0.9em;
+            color: #888;
             margin-bottom: 15px;
         }
 
-        /* --- Footer --- */
+        .read-more-btn {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 0.95em;
+            cursor: pointer;
+            color: #2c3e50;
+            transition: 0.3s;
+        }
+
+        .read-more-btn:hover {
+            opacity: 0.7;
+        }
+
+        .extra-content {
+            display: none;
+            margin-top: 15px;
+        }
+
         footer {
             text-align: center;
-            padding: 25px;
+            padding: 30px;
             font-size: 0.9em;
-            background-color: #222;
+            background-color: #1f2d3d;
             color: white;
         }
 
-        /* --- Responsive --- */
         @media (max-width: 600px) {
             section {
-                padding: 20px;
+                padding: 25px;
             }
 
             header h1 {
                 font-size: 2em;
             }
-
-            header p {
-                font-size: 1em;
-            }
         }
     </style>
+
+    <script>
+        function toggleContent(id, btn) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+                btn.innerText = "Read Less ↑";
+            } else {
+                content.style.display = "none";
+                btn.innerText = "Read More →";
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <h1>Ashlee Statham</h1>
-        <p>Data Science Student | Portfolio & Blog</p>
-    </header>
 
-    <!-- ABOUT ME -->
-    <section id="about">
-        <h2>About Me</h2>
+<header>
+    <h1>Ashlee Statham</h1>
+    <p>Data Science Student | Portfolio & Blog</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello and Welcome! I’m Ashlee, a data science professional interested in using
+        data to better understand people, systems, and social patterns. I’m
+        especially interested in how data science can be applied in
+        interdisciplinary contexts, including social science, policy,
+        technology, and ethical decision-making. Outside of my work, I enjoy
+        spending time with my family, traveling, cars, and cheering on my favorite
+        sports teams.
+    </p>
+    <p>
+        This website will grow throughout the semester as I develop new technical
+        skills, complete projects, and reflect on what I’m learning.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Portfolio / Projects</h2>
+
+    <div class="projects-placeholder">
+        <p><strong>Projects coming soon.</strong></p>
         <p>
-            Hello and Welcome! I’m Ashlee, a data science professional interested in using
-            data to better understand people, systems, and social patterns. I’m
-            especially interested in how data science can be applied in
-            interdisciplinary contexts, including social science, policy,
-            technology, and ethical decision-making. Outside of my work, I enjoy
-            spending time with my family, traveling, cars, and cheering on my favorite
-            sports teams.
+            This section will be updated throughout the semester with data science
+            projects as I complete them.
         </p>
+    </div>
+</section>
+
+<section id="blog">
+    <h2>Blog</h2>
+
+    <!-- Blog Post 1 -->
+    <article>
+        <h3>Why Learning Data Science in Social and Interdisciplinary Contexts Matters</h3>
+        <div class="meta">Published: January 2026 | 4 min read</div>
+
         <p>
-            This website will grow throughout the semester as I develop new technical
-            skills, complete projects, and reflect on what I’m learning.
+            Learning data science in social and interdisciplinary contexts matters
+            because data is not just numbers — it represents people, behaviors, and
+            real-world outcomes.
         </p>
-    </section>
 
-    <!-- PORTFOLIO / PROJECTS -->
-    <section id="projects">
-        <h2>Portfolio / Projects</h2>
-
-        <div class="projects-placeholder">
-            <p><strong>Projects coming soon.</strong></p>
+        <div id="post1" class="extra-content">
             <p>
-                This section will be updated throughout the semester with data science
-                projects as I complete them.
-            </p>
-        </div>
-    </section>
-
-    <!-- BLOG -->
-    <section id="blog">
-        <h2>Blog</h2>
-
-        <article>
-            <h3>
-                Why Learning Data Science in Social and Interdisciplinary Contexts Matters
-            </h3>
-            <p><em>Published: January 2026</em></p>
-
-            <p>
-                Learning data science in social and interdisciplinary contexts matters
-                because data is not just numbers — it represents people, behaviors, and
-                real-world outcomes. Modeling social topics and people allows us to
-                better understand patterns that are often invisible at the individual
-                level, such as inequality and access to resources. When used correctly,
-                data science can have a positive and powerful impact on public policy,
+                Modeling social topics allows us to understand patterns that are often invisible
+                at the individual level, such as inequality and access to resources.
+                When used correctly, data science can positively impact public policy,
                 healthcare, education, and technology.
             </p>
-
             <p>
-                At the same time, working with data about people comes with significant
-                responsibilities. Data is rarely neutral, and the way it is collected,
-                modeled, and interpreted can sometimes create biases and/or overlook
-                important context. As someone learning data science, I often think
-                about ethical responsibilities such as protecting privacy, avoiding
-                harmful assumptions, and being transparent about limitations in data
-                and models. Understanding who is represented — and who is not — is just
-                as important as building accurate models.
+                At the same time, working with data about people comes with responsibilities.
+                Data is rarely neutral, and how it is collected and interpreted can create bias.
+                Protecting privacy, avoiding harmful assumptions, and acknowledging limitations
+                are essential responsibilities.
             </p>
-
             <p>
-                Another reason interdisciplinary learning matters is because social
-                problems cannot be solved through technical skills alone. Data science
-                benefits from perspectives in sociology, psychology, ethics, and public
-                policy. Without these perspectives, it’s easy to misinterpret results
-                or apply models in ways that cause harm. For that reason, learning to
-                ask thoughtful questions is just as important as learning how to code.
+                Interdisciplinary learning matters because social problems require more than
+                technical skills. Perspectives from sociology, psychology, ethics, and public
+                policy are critical to responsible analysis.
             </p>
-
             <p>
-                Through my DTSC Studio II course, I’m hoping to better understand how
-                data science tools can be used to explore social questions responsibly
-                and thoughtfully. I want to develop both technical skills and critical
-                thinking skills so that I can analyze data in a way that respects the
-                people involved. Ultimately, my goal is to use data science not just to
-                find patterns, but to contribute to more informed and ethical
+                Through DTSC Studio II, I aim to strengthen both technical and critical thinking
+                skills so I can use data science to contribute to ethical and informed
                 decision-making.
             </p>
-        </article>
-    </section>
+        </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Ashlee Statham | Built with GitHub Pages</p>
-    </footer>
+        <span class="read-more-btn" onclick="toggleContent('post1', this)">
+            Read More →
+        </span>
+    </article>
+
+    <!-- Blog Post 2 -->
+    <article>
+        <h3>Social Determinants of Health and the Capabilities Approach</h3>
+        <div class="meta">Published: February 2026 | 5 min read</div>
+
+        <p>
+            When thinking about health, the first thing I picture is hospitals,
+            doctors, and medications. However, most of what shapes our health
+            happens long before we enter a clinic.
+        </p>
+
+        <div id="post2" class="extra-content">
+            <p>
+                During Data Science Studio II, I learned about the Social Determinants
+                of Health (SDOH), defined as the conditions in which people are born,
+                grow, live, work, and age. I now see SDOH as everyday circumstances
+                that quietly structure our chances of living a healthy life.
+            </p>
+            <p>
+                Housing, employment, neighborhood safety, education, and social inclusion
+                all shape health outcomes. A child in damp housing may develop asthma.
+                Someone with stable employment is more likely to afford nutritious food
+                and experience lower stress levels.
+            </p>
+            <p>
+                The Capabilities Approach shifts focus from what people have to what
+                they are able to be and do. It asks whether people truly have the
+                freedom to live the life they value.
+            </p>
+            <p>
+                Comparing SDOH and the Capabilities Approach shows that social
+                conditions shape people’s capabilities. Unsafe neighborhoods,
+                poor housing, and discrimination limit not only health outcomes,
+                but also freedom, opportunity, and participation in society.
+                SDOH form the foundation on which capabilities either grow or
+                are constrained.
+            </p>
+        </div>
+
+        <span class="read-more-btn" onclick="toggleContent('post2', this)">
+            Read More →
+        </span>
+    </article>
+
+</section>
+
+<footer>
+    <p>© 2026 Ashlee Statham | Built with GitHub Pages</p>
+</footer>
+
 </body>
 </html>
