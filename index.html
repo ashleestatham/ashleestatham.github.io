@@ -8,19 +8,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<script>
-function toggleContent(id, btn) {
-    var content = document.getElementById(id);
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        btn.innerText = "Read Less ↑";
-    } else {
-        content.style.display = "none";
-        btn.innerText = "Read More →";
-    }
-}
-</script>
-
 </head>
 
 <body>
@@ -73,27 +60,31 @@ function toggleContent(id, btn) {
 <section id="blog">
     <h2>Blog</h2>
 
-    <!-- BLOG POST 1 -->
-    <article>
-        <h3>Why Learning Data Science in Social and Interdisciplinary Contexts Matters</h3>
-        <div class="meta">Published: January 2026 | 4 min read</div>
-        <a href="blog1.html" class="read-more-btn">
-Read Full Post →
-            
-</a>
-        </span>
-    </article>
+    <!-- BLOG CARD 1 -->
+    <div class="blog-card">
+        <img src="blog1.jpg" alt="Blog 1 Image">
 
-    <!-- BLOG POST 2 (Balanced preview length) -->
-    <article>
-        <h3>Social Determinants of Health and the Capabilities Approach</h3>
-        <div class="meta">Published: February 2026 | 5 min read</div>
-        <a href="blog2.html" class="read-more-btn">
-Read Full Post →
-            
-</a>
-        </span>
-    </article>
+        <div class="blog-content">
+            <h3>Why Learning Data Science in Social and Interdisciplinary Contexts Matters</h3>
+            <div class="meta">Published: January 2026 | 4 min read</div>
+            <a href="blog1.html" class="read-more-btn">
+                Read Full Post →
+            </a>
+        </div>
+    </div>
+
+    <!-- BLOG CARD 2 -->
+    <div class="blog-card">
+        <img src="blog2.jpg" alt="Blog 2 Image">
+
+        <div class="blog-content">
+            <h3>Social Determinants of Health and the Capabilities Approach</h3>
+            <div class="meta">Published: February 2026 | 5 min read</div>
+            <a href="blog2.html" class="read-more-btn">
+                Read Full Post →
+            </a>
+        </div>
+    </div>
 
 </section>
 
