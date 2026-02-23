@@ -96,3 +96,83 @@ section {
 .project-content a:hover {
     background-color: #444;
 }
+
+/* ---------------- HERO SECTION ---------------- */
+
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 40px 8% 120px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 0.95em;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.hero-content {
+    margin-top: 100px;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3.2em;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-weight: 400;
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.btn-secondary {
+    border: 1px solid #94a3b8;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255,255,255,0.1);
+}
